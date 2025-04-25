@@ -4,6 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="content">
+        <h2>Anastasiia Violet</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex
+          sed voluptatem molestias atque perspiciatis cupiditate ut, omnis
+          tenetur? Adipisci excepturi temporibus esse facilis fuga quasi ut
+          tenetur quia porro.
+        </p>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+      <img src="./source/ja_profesion.png" class="avatar" alt="image avatar" />
+    </section>
+    <section id="services"></section>
+    <section id="portfolio"></section>
+    <section id="contact"></section>
+    <script>
+      // Tablica z  obrazkami avataru
+      const images = [
+        "ja_profesion.png",
+        "ja.png",
+        "ja_suit.png",
+        "ja_czarne.png",
+      ];
+      //Obrazek avatar
+      const imageAvatar = document.querySelector(".avatar");
+      // Wybór losowego obrazka z tablicy
+      const randomIndex = Math.floor(Math.random() * images.length);
+      imageAvatar.src = "./source/" + images[randomIndex];
+    </script>
+  </body>
 </html>
