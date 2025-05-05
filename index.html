@@ -26,7 +26,7 @@
           tenetur? Adipisci excepturi temporibus esse facilis fuga quasi ut
           tenetur quia porro.
         </p>
-        <a href="#" class="btn">Contact Me</a>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
       <img src="./source/ja_profesion.png" class="avatar" alt="image avatar" />
     </section>
@@ -41,20 +41,20 @@
       </div>
       <div class="content">
         <div class="servicesBx">
-          <img src="./source/icon1.png" alt="icon1" />
+          <img src="./source/icon1.png" alt="iconWebDesign" />
           <h3>Web Designing</h3>
         </div>
         <div class="servicesBx">
-          <img src="./source/icon2.png" alt="icon2" />
+          <img src="./source/icon2.png" alt="iconWebDev" />
           <h3>Web Development</h3>
         </div>
         <div class="servicesBx">
-          <img src="./source/icon3.png" alt="icon13" />
-          <h3>Android Apps</h3>
+          <img src="./source/icon3.png" alt="iconPython" />
+          <h3>Python Development</h3>
         </div>
         <div class="servicesBx">
-          <img src="./source/icon4.png" alt="icon4" />
-          <h3>Video Editing</h3>
+          <img src="./source/icon4.png" alt="iconDataBase" />
+          <h3>DataBase</h3>
         </div>
       </div>
       <div class="center"><a href="#" class="btn">Here Me</a></div>
@@ -70,40 +70,56 @@
       </div>
       <div class="content">
         <div class="imgBx">
-          <img src="./source/collection/img1.jpg" alt="img1" />
+          <img src="./source/collection/img1.png" alt="img1" />
         </div>
         <div class="imgBx">
-          <img src="./source/collection/img2.jpg" alt="img2" />
+          <img src="./source/collection/img2.png" alt="img2" />
         </div>
         <div class="imgBx">
-          <img src="./source/collection/img3.jpg" alt="img3" />
+          <img src="./source/collection/img3.png" alt="img3" />
         </div>
         <div class="imgBx">
-          <img src="./source/collection/img4.jpg" alt="img4" />
+          <img src="./source/collection/img4.png" alt="img4" />
         </div>
         <div class="imgBx">
-          <img src="./source/collection/img5.jpg" alt="img5" />
+          <img src="./source/collection/img5.png" alt="img5" />
         </div>
         <div class="imgBx">
-          <img src="./source/collection/img6.jpg" alt="img6" />
+          <img src="./source/collection/img6.png" alt="img6" />
         </div>
       </div>
       <div class="center"><a href="#" class="btn">View More</a></div>
     </section>
-    <section id="contact"></section>
-    <script>
-      // Tablica z  obrazkami avataru
-      const images = [
-        "ja_profesion.png",
-        "ja.png",
-        "ja_suit.png",
-        "ja_czarne.png",
-      ];
-      //Obrazek avatar
-      const imageAvatar = document.querySelector(".avatar");
-      // Wybór losowego obrazka z tablicy
-      const randomIndex = Math.floor(Math.random() * images.length);
-      imageAvatar.src = "./source/" + images[randomIndex];
-    </script>
+    <section id="contact">
+      <div class="secText">
+        <h2>Ways To Contact Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+          quo excepturi quisquam doloribus, aut autem quos natus ipsam ea.
+          Reiciendis tempore pariatur maiores vero tenetur!
+        </p>
+      </div>
+      <div class="content">
+        <a href="#"
+          ><ion-icon name="mail-outline"></ion-icon
+          >anastasiia.violet@gmail.com</a
+        >
+        <a href="#"><ion-icon name="call-outline"></ion-icon>+48 000 000 000</a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon>skype</a>
+        <a href="#"><ion-icon name="logo-whatsapp"></ion-icon>whatsapp</a>
+      </div>
+      <div class="center">
+        <p class="copyrights">Copyright © 2025. All Right Reserved.</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
